@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11E59692257AD2E800FF38E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E59691257AD2E800FF38E1 /* AppDelegate.swift */; };
+		11E59694257AD2E800FF38E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E59693257AD2E800FF38E1 /* SceneDelegate.swift */; };
+		11E59696257AD2E800FF38E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E59695257AD2E800FF38E1 /* ViewController.swift */; };
+		11E59699257AD2E800FF38E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E59697257AD2E800FF38E1 /* Main.storyboard */; };
+		11E5969B257AD2E900FF38E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E5969A257AD2E900FF38E1 /* Assets.xcassets */; };
+		11E5969E257AD2E900FF38E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E5969C257AD2E900FF38E1 /* LaunchScreen.storyboard */; };
+		11E596A9257AD2E900FF38E1 /* FlightBookerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E596A8257AD2E900FF38E1 /* FlightBookerTests.swift */; };
+		11E596B4257AD2E900FF38E1 /* FlightBookerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E596B3257AD2E900FF38E1 /* FlightBookerUITests.swift */; };
+		11E596C7257AD36600FF38E1 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E596C6257AD36600FF38E1 /* Validator.swift */; };
+		11E596CF257AD39600FF38E1 /* DateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E596CE257AD39600FF38E1 /* DateValidator.swift */; };
+		11E596D5257AD4CA00FF38E1 /* FlightType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E596D4257AD4CA00FF38E1 /* FlightType.swift */; };
+		11E596DD257AD7C800FF38E1 /* Tranformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E596DC257AD7C800FF38E1 /* Tranformation.swift */; };
+		11E596E2257AD7DA00FF38E1 /* Tranformation+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E596E1257AD7DA00FF38E1 /* Tranformation+Date.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11E596A5257AD2E900FF38E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E59686257AD2E800FF38E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11E5968D257AD2E800FF38E1;
+			remoteInfo = FlightBooker;
+		};
+		11E596B0257AD2E900FF38E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E59686257AD2E800FF38E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11E5968D257AD2E800FF38E1;
+			remoteInfo = FlightBooker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11E5968E257AD2E800FF38E1 /* FlightBooker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightBooker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E59691257AD2E800FF38E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11E59693257AD2E800FF38E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		11E59695257AD2E800FF38E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11E59698257AD2E800FF38E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11E5969A257AD2E900FF38E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11E5969D257AD2E900FF38E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11E5969F257AD2E900FF38E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E596A4257AD2E900FF38E1 /* FlightBookerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightBookerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E596A8257AD2E900FF38E1 /* FlightBookerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookerTests.swift; sourceTree = "<group>"; };
+		11E596AA257AD2E900FF38E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E596AF257AD2E900FF38E1 /* FlightBookerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightBookerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E596B3257AD2E900FF38E1 /* FlightBookerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookerUITests.swift; sourceTree = "<group>"; };
+		11E596B5257AD2E900FF38E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E596C6257AD36600FF38E1 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		11E596CE257AD39600FF38E1 /* DateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValidator.swift; sourceTree = "<group>"; };
+		11E596D4257AD4CA00FF38E1 /* FlightType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightType.swift; sourceTree = "<group>"; };
+		11E596DC257AD7C800FF38E1 /* Tranformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tranformation.swift; sourceTree = "<group>"; };
+		11E596E1257AD7DA00FF38E1 /* Tranformation+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tranformation+Date.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11E5968B257AD2E800FF38E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E596A1257AD2E900FF38E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E596AC257AD2E900FF38E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11E59685257AD2E800FF38E1 = {
+			isa = PBXGroup;
+			children = (
+				11E59690257AD2E800FF38E1 /* FlightBooker */,
+				11E596A7257AD2E900FF38E1 /* FlightBookerTests */,
+				11E596B2257AD2E900FF38E1 /* FlightBookerUITests */,
+				11E5968F257AD2E800FF38E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11E5968F257AD2E800FF38E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11E5968E257AD2E800FF38E1 /* FlightBooker.app */,
+				11E596A4257AD2E900FF38E1 /* FlightBookerTests.xctest */,
+				11E596AF257AD2E900FF38E1 /* FlightBookerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11E59690257AD2E800FF38E1 /* FlightBooker */ = {
+			isa = PBXGroup;
+			children = (
+				11E596D3257AD4C300FF38E1 /* Types */,
+				11E596C5257AD35F00FF38E1 /* Protocol */,
+				11E596C4257AD35900FF38E1 /* Helpers */,
+				11E59691257AD2E800FF38E1 /* AppDelegate.swift */,
+				11E59693257AD2E800FF38E1 /* SceneDelegate.swift */,
+				11E59695257AD2E800FF38E1 /* ViewController.swift */,
+				11E59697257AD2E800FF38E1 /* Main.storyboard */,
+				11E5969A257AD2E900FF38E1 /* Assets.xcassets */,
+				11E5969C257AD2E900FF38E1 /* LaunchScreen.storyboard */,
+				11E5969F257AD2E900FF38E1 /* Info.plist */,
+			);
+			path = FlightBooker;
+			sourceTree = "<group>";
+		};
+		11E596A7257AD2E900FF38E1 /* FlightBookerTests */ = {
+			isa = PBXGroup;
+			children = (
+				11E596A8257AD2E900FF38E1 /* FlightBookerTests.swift */,
+				11E596AA257AD2E900FF38E1 /* Info.plist */,
+			);
+			path = FlightBookerTests;
+			sourceTree = "<group>";
+		};
+		11E596B2257AD2E900FF38E1 /* FlightBookerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11E596B3257AD2E900FF38E1 /* FlightBookerUITests.swift */,
+				11E596B5257AD2E900FF38E1 /* Info.plist */,
+			);
+			path = FlightBookerUITests;
+			sourceTree = "<group>";
+		};
+		11E596C4257AD35900FF38E1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				11E596CE257AD39600FF38E1 /* DateValidator.swift */,
+				11E596E1257AD7DA00FF38E1 /* Tranformation+Date.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		11E596C5257AD35F00FF38E1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				11E596DC257AD7C800FF38E1 /* Tranformation.swift */,
+				11E596C6257AD36600FF38E1 /* Validator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		11E596D3257AD4C300FF38E1 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				11E596D4257AD4CA00FF38E1 /* FlightType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11E5968D257AD2E800FF38E1 /* FlightBooker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11E596B8257AD2E900FF38E1 /* Build configuration list for PBXNativeTarget "FlightBooker" */;
+			buildPhases = (
+				11E5968A257AD2E800FF38E1 /* Sources */,
+				11E5968B257AD2E800FF38E1 /* Frameworks */,
+				11E5968C257AD2E800FF38E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlightBooker;
+			productName = FlightBooker;
+			productReference = 11E5968E257AD2E800FF38E1 /* FlightBooker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11E596A3257AD2E900FF38E1 /* FlightBookerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11E596BB257AD2E900FF38E1 /* Build configuration list for PBXNativeTarget "FlightBookerTests" */;
+			buildPhases = (
+				11E596A0257AD2E900FF38E1 /* Sources */,
+				11E596A1257AD2E900FF38E1 /* Frameworks */,
+				11E596A2257AD2E900FF38E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11E596A6257AD2E900FF38E1 /* PBXTargetDependency */,
+			);
+			name = FlightBookerTests;
+			productName = FlightBookerTests;
+			productReference = 11E596A4257AD2E900FF38E1 /* FlightBookerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11E596AE257AD2E900FF38E1 /* FlightBookerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11E596BE257AD2E900FF38E1 /* Build configuration list for PBXNativeTarget "FlightBookerUITests" */;
+			buildPhases = (
+				11E596AB257AD2E900FF38E1 /* Sources */,
+				11E596AC257AD2E900FF38E1 /* Frameworks */,
+				11E596AD257AD2E900FF38E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11E596B1257AD2E900FF38E1 /* PBXTargetDependency */,
+			);
+			name = FlightBookerUITests;
+			productName = FlightBookerUITests;
+			productReference = 11E596AF257AD2E900FF38E1 /* FlightBookerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11E59686257AD2E800FF38E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					11E5968D257AD2E800FF38E1 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					11E596A3257AD2E900FF38E1 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 11E5968D257AD2E800FF38E1;
+					};
+					11E596AE257AD2E900FF38E1 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 11E5968D257AD2E800FF38E1;
+					};
+				};
+			};
+			buildConfigurationList = 11E59689257AD2E800FF38E1 /* Build configuration list for PBXProject "FlightBooker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11E59685257AD2E800FF38E1;
+			productRefGroup = 11E5968F257AD2E800FF38E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11E5968D257AD2E800FF38E1 /* FlightBooker */,
+				11E596A3257AD2E900FF38E1 /* FlightBookerTests */,
+				11E596AE257AD2E900FF38E1 /* FlightBookerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11E5968C257AD2E800FF38E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E5969E257AD2E900FF38E1 /* LaunchScreen.storyboard in Resources */,
+				11E5969B257AD2E900FF38E1 /* Assets.xcassets in Resources */,
+				11E59699257AD2E800FF38E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E596A2257AD2E900FF38E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E596AD257AD2E900FF38E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11E5968A257AD2E800FF38E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E596E2257AD7DA00FF38E1 /* Tranformation+Date.swift in Sources */,
+				11E59696257AD2E800FF38E1 /* ViewController.swift in Sources */,
+				11E59692257AD2E800FF38E1 /* AppDelegate.swift in Sources */,
+				11E596DD257AD7C800FF38E1 /* Tranformation.swift in Sources */,
+				11E596CF257AD39600FF38E1 /* DateValidator.swift in Sources */,
+				11E596C7257AD36600FF38E1 /* Validator.swift in Sources */,
+				11E59694257AD2E800FF38E1 /* SceneDelegate.swift in Sources */,
+				11E596D5257AD4CA00FF38E1 /* FlightType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E596A0257AD2E900FF38E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E596A9257AD2E900FF38E1 /* FlightBookerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E596AB257AD2E900FF38E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E596B4257AD2E900FF38E1 /* FlightBookerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11E596A6257AD2E900FF38E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11E5968D257AD2E800FF38E1 /* FlightBooker */;
+			targetProxy = 11E596A5257AD2E900FF38E1 /* PBXContainerItemProxy */;
+		};
+		11E596B1257AD2E900FF38E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11E5968D257AD2E800FF38E1 /* FlightBooker */;
+			targetProxy = 11E596B0257AD2E900FF38E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11E59697257AD2E800FF38E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11E59698257AD2E800FF38E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11E5969C257AD2E900FF38E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11E5969D257AD2E900FF38E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11E596B6257AD2E900FF38E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11E596B7257AD2E900FF38E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11E596B9257AD2E900FF38E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlightBooker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josequintero.FlightBooker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11E596BA257AD2E900FF38E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlightBooker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josequintero.FlightBooker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11E596BC257AD2E900FF38E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlightBookerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josequintero.FlightBookerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlightBooker.app/FlightBooker";
+			};
+			name = Debug;
+		};
+		11E596BD257AD2E900FF38E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlightBookerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josequintero.FlightBookerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlightBooker.app/FlightBooker";
+			};
+			name = Release;
+		};
+		11E596BF257AD2E900FF38E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlightBookerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josequintero.FlightBookerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlightBooker;
+			};
+			name = Debug;
+		};
+		11E596C0257AD2E900FF38E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlightBookerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josequintero.FlightBookerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlightBooker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11E59689257AD2E800FF38E1 /* Build configuration list for PBXProject "FlightBooker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E596B6257AD2E900FF38E1 /* Debug */,
+				11E596B7257AD2E900FF38E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11E596B8257AD2E900FF38E1 /* Build configuration list for PBXNativeTarget "FlightBooker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E596B9257AD2E900FF38E1 /* Debug */,
+				11E596BA257AD2E900FF38E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11E596BB257AD2E900FF38E1 /* Build configuration list for PBXNativeTarget "FlightBookerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E596BC257AD2E900FF38E1 /* Debug */,
+				11E596BD257AD2E900FF38E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11E596BE257AD2E900FF38E1 /* Build configuration list for PBXNativeTarget "FlightBookerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E596BF257AD2E900FF38E1 /* Debug */,
+				11E596C0257AD2E900FF38E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11E59686257AD2E800FF38E1 /* Project object */;
+}
